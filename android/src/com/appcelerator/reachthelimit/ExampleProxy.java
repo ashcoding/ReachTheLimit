@@ -9,11 +9,8 @@
 package com.appcelerator.reachthelimit;
 
 import org.appcelerator.kroll.KrollDict;
-import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiC;
-import org.appcelerator.titanium.util.Log;
-import org.appcelerator.titanium.util.TiConfig;
 import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.view.TiCompositeLayout;
@@ -21,7 +18,7 @@ import org.appcelerator.titanium.view.TiCompositeLayout.LayoutArrangement;
 import org.appcelerator.titanium.view.TiUIView;
 
 import android.app.Activity;
-
+import android.util.Log;
 
 // This proxy can be created by calling Reachthelimit.createExample({message: "hello world"})
 @Kroll.proxy(creatableInModule=ReachthelimitModule.class)
@@ -29,7 +26,6 @@ public class ExampleProxy extends TiViewProxy
 {
 	// Standard Debugging variables
 	private static final String LCAT = "ExampleProxy";
-	private static final boolean DBG = TiConfig.LOGD;
 
 	private class ExampleView extends TiUIView
 	{
