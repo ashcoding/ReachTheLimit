@@ -2,8 +2,8 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 2.0.1
-apiversion: 3
+version: 2.0.2
+apiversion: 2
 architectures: armeabi armeabi-v7a x86
 description: reachthelimit
 author: Your Name
